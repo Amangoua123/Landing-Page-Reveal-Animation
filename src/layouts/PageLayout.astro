@@ -1,0 +1,14 @@
+---
+const { title } = Astro.props;
+
+// import CSS Styles
+import "../styles/style.css";
+---
+
+<title>{title}</title>
+
+<html>
+  <body>
+    <slot />
+  </body>
+</html>

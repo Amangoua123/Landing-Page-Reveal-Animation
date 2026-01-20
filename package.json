@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,12 @@
   },
   "homepage": "https://github.com/Amangoua123/-Landing-Page-Reveal-Animation#readme",
   "dependencies": {
-    "astro": "^5.16.11"
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.11",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "prettier": "3.8.0",
+    "prettier-plugin-astro": "0.14.1"
   }
 }
