@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Amangoua123/-Landing-Page-Reveal-Animation/issues"
   },
-  "homepage": "https://github.com/Amangoua123/-Landing-Page-Reveal-Animation#readme"
+  "homepage": "https://github.com/Amangoua123/-Landing-Page-Reveal-Animation#readme",
+  "dependencies": {
+    "astro": "^5.16.11"
+  }
 }
