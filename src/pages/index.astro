@@ -28,11 +28,13 @@ const { imagePath } = Astro.props;
       <div class="digit count-3"></div>
     </div>
 
-    <div class="images-wrapper absolute top-0 left-0 w-full h-full">
+    <div
+      class="images-wrapper absolute top-0 left-1/2 -translate-x-1/2 w-full h-full"
+    >
       {
         imageArray.map((image) => (
           <Image
-            class="img absolute top-6 left-6 w-[30%] h-[30%] object-top object-cover rounded-xl overflow-hidden "
+            class="img absolute top-6 left-1/2 -translate-x-1/2  w-[30%] h-[35%] object-top object-cover rounded-xl overflow-hidden "
             alt="Dynamic Alt"
             src={image.default}
             loading="eager"
@@ -44,7 +46,7 @@ const { imagePath } = Astro.props;
 
     <nav class="invisible flex items-center justify-center">
       <div class="logo-name">
-        <a href="/">Konpo</a>
+        <a href="/">Amangs</a>
       </div>
 
       <div class="nav-items flex items-center gap-30">
@@ -78,17 +80,17 @@ const { imagePath } = Astro.props;
     </div>
 
     <div
-      class="invisible header h-ful text-center flex flex-col items-center gap-32 justify-center"
+      class="invisible absolute left-1/2 -translate-x-1/2 header text-center flex flex-col items-center gap-20 justify-center"
     >
       <div>
-        <h1 class="text-2xl">Amangoua Ange-Th,</h1>
+        <h1 class="text-2xl">Amangoua Kacou A.</h1>
         <h1 class="text-2xl">Creative Developer</h1>
       </div>
 
       <div>
-        <p class="w-110 leading-4.5 text-center">
-          Konpo is a plug-and-play crew of seasoned designers, for CXOs that
-          know design is an unfair advantage.
+        <p class="small w-100 leading-4.5 text-xs text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          praesentium pariatur.
         </p>
       </div>
     </div>

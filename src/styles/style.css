@@ -26,6 +26,7 @@
   --text-xl: 10px;
   --text-sm: 12px;
   --text-md: 20px;
+  --text-xs: 8px;
 
   --font-digit: 100px;
   --font-bold: 500;
@@ -55,7 +56,9 @@ a {
   overflow: hidden;
   line-height: 1;
 }
-
+.small p {
+  font-size: 10px;
+}
 h1 {
   line-height: 75px;
   line-height: 1.1;
@@ -174,7 +177,8 @@ nav .divider {
   top: unset;
   left: unset;
   bottom: 0.05rem;
-  right: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .images-wrapper img {
@@ -182,10 +186,7 @@ nav .divider {
 }
 
 .header {
-  position: absolute;
   top: 35%;
-  left: 6rem;
-  right: 2rem;
   transform: translateY(-30%);
 }
 

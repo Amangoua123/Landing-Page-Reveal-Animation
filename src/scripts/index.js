@@ -117,7 +117,7 @@ function animateImages() {
   return mainTimelime;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   spliText();
   createCounterDigits();
 
