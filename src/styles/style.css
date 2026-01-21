@@ -1,1 +1,214 @@
 @import "tailwindcss";
+
+/* IMPORT FONTS */
+
+@font-face {
+  font-family: "NeueHaas";
+  src: url("/fonts/Neuehaas.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@theme {
+  --background: #f2f0f9;
+  --fontColor: #1f1f1f;
+  --loader-bg: #e0e0d8;
+  --stroke: rgba(0, 0, 0, 0.5);
+  --font-neue: "NeueHaas";
+
+  --text-2xl: 75px;
+  --text-xl: 10px;
+  --text-sm: 12px;
+  --text-md: 20px;
+
+  --font-digit: 100px;
+  --font-bold: 500;
+  --tracking-normal: -0.02rem;
+
+  --leading-normal: 1.1;
+  --leading-sm: 17px;
+  --leading-digit: 150px;
+  --bg-sans: var(--background);
+  --bg-loader: var(--loader-bg);
+
+  --transform-scaleY: scaleY(0%);
+}
+
+body {
+  color: var(--fontColor);
+  font-family: var(--font-neue);
+  background-color: var(--background);
+}
+
+p,
+a {
+  color: var(--fontColor);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 1;
+}
+
+h1 {
+  line-height: 75px;
+  line-height: 1.1;
+}
+
+h2 {
+  line-height: 1.1;
+}
+nav a {
+  color: #fff !important;
+}
+.counter {
+  clip-path: polygon(0 0, 100% 0, 100% 120px, 0 120px);
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  display: flex;
+  height: 120px;
+  font-size: 120px;
+  line-height: 150px;
+}
+
+.digit {
+  position: relative;
+  top: -15px;
+}
+
+.num1offset1 {
+  position: relative;
+  right: -30px;
+}
+
+.num1offset2 {
+  position: relative;
+  right: -15px;
+}
+
+.divider {
+  background-color: var(--stroke);
+}
+
+nav {
+  position: relative;
+  height: 100vw;
+  height: 4rem;
+  padding: 1.5rem 1.5rem 1.5rem 7.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+}
+
+.links {
+  gap: 0.5rem;
+}
+
+nav .divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(0%);
+}
+
+.hero {
+  background-color: var(--loader-bg);
+}
+
+.hero-bg {
+  background-color: var(--background);
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 100svh;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+}
+.sidebar .logo {
+  aspect-ratio: 1;
+  transform: scale(0);
+}
+
+.sidebar .logo span:not(.circle) {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 100%;
+}
+.sidebar .divider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100svh;
+  transform-origin: top;
+  transform: scaleY(0%);
+}
+
+.images-wrapper .img.animate-out {
+  top: unset;
+  left: unset;
+  bottom: 0.05rem;
+  right: 2rem;
+}
+
+.images-wrapper img {
+  aspect-ratio: 5/3;
+}
+
+.header {
+  position: absolute;
+  top: 35%;
+  left: 6rem;
+  right: 2rem;
+  transform: translateY(-30%);
+}
+
+.side-info .divider {
+  width: 100%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(0%);
+}
+
+.line {
+  overflow: hidden;
+}
+
+.line span {
+  position: relative;
+  display: block;
+  transform: translateY(125%);
+  will-change: transform;
+}
+
+.logo-name a {
+  font-size: 2rem;
+  color: black !important;
+  font-weight: bold;
+}
